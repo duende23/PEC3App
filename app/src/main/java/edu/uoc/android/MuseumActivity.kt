@@ -32,17 +32,20 @@ class MuseumActivity : AppCompatActivity() {
 
     fun api() {
 
-        val call = RetrofitFactory().museumService.museums(1, 5)
+        val call = RetrofitFactory().museumService.museums(1, 11)
 
         call.enqueue(object : Callback<Museums> {
 
             override fun onResponse(call: Call<Museums>, response: Response<Museums>) {
                 if (response.code() == 200) {
 
-                   // val museums = response.body()!!
+                   val museums = response.body()!!
                     //adaptadador = MuseumAdapter(museums.elements)
+                    val elements = museums.elements
+                    recyclerciew_main.adapter = MainAdapter(elements)
 
-                    recyclerciew_main.adapter = MainAdapter()
+
+
                 }
             }
 
