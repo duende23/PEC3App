@@ -40,7 +40,7 @@ class MapsActivity2 : AppCompatActivity(), OnMapReadyCallback, OnMarkerClickList
         mapFragment.getMapAsync(this)
 
 
-        api()
+        //api()
 
     }
 
