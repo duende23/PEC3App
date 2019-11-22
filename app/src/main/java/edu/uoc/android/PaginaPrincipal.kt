@@ -27,7 +27,7 @@ class PaginaPrincipal : AppCompatActivity() {
         rellayMaps = findViewById(R.id.rellay_Maps)
 
         rellayMaps.setOnClickListener {
-            val nextMapsActivity = Intent(this, MapsActivity::class.java)
+            val nextMapsActivity = Intent(this, MapsActivity2::class.java)
             startActivity(nextMapsActivity)
         }
 

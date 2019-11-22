@@ -15,5 +15,6 @@
     <string name="iv_Quizzes">Quizzes Icon</string>
     <string name="iv_Settings">Settings Icon</string>
     <string name="iv_Help">Help Icon</string>
+    <string name="title_activity_maps2">Map</string>
 
 </resources>
